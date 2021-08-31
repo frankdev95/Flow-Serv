@@ -1,0 +1,108 @@
+.modal {
+    position: relative;
+
+    &__backdrop {
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        pointer-events: none;
+        background-color: #eee;
+        transition: opacity .2s;
+        z-index: 1;
+    }
+
+    &__backdrop.show {
+        animation: showOpacity .1s forwards;
+    }
+
+    &__backdrop.hide {
+        animation: hideOpacity .1s .1s forwards;
+    }
+
+    &__content {
+        border-bottom-left-radius: 70px;
+        border-top-right-radius: 70px;
+        box-shadow: $main-box-shadow;
+        display: none;
+        @include centreXYFixed;
+        z-index: 2;
+    }
+
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+
+        img {
+            width: 2.25rem;
+            height: 2.25rem;
+        }
+    }
+
+    &.modal-services {
+        // display: none;
+
+        .modal {
+
+            &__content{
+                background-color: #fff;
+                display: flex;
+                gap: 4rem;
+                padding: 4rem;
+                pointer-events: none;
+                width: max(50rem, 70%);
+                transform: translate(-50%, -50%) scale(0);
+
+                &.show {
+                    animation: scaleIn .2s .1s ease-in forwards;
+                }
+
+                &.hide {
+                    animation: moveYRight .1s;
+                }
+    
+                &-img {
+                    flex-basis: 30%;
+                    flex-shrink: 0;
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+    
+                &-text {
+                    flex-basis: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    h2 {
+                        margin: 2rem 0;
+                    }
+
+                    &-list {
+                        font-size: 1.6rem;
+                        list-style-position: inside;
+                        margin: 2rem 0
+                    }
+                }
+            }
+
+            &__corner {
+                @include corner($corner-size-sm);
+
+                &-container {
+                    @include corner-container($corner-size-sm);    
+                }
+            }
+        
+        }
+    }
+}

@@ -1,0 +1,65 @@
+/*
+Breakpoints
+540px - 33.75em
+767px - 47.93em
+991px - 61.93em
+1200px - 75em
+1440px - 90em
+1600px - 100em
+*/
+
+@mixin btn-solid {
+    background-color: $clr-secondary;
+    border-radius: $btn-border-radius;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: .5rem 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@mixin btn-outline {
+    border: 2px solid $clr-primary;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: normal;
+    margin: 2rem 0;
+    padding: .5rem 1rem;
+}
+
+@mixin centreXY {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin centreXYFixed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin corner-container($size) {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(#{$size} / 2);
+    overflow: hidden;
+}
+
+@mixin corner($size) {
+    background-color: $clr-secondary;
+    border-radius: 50%;
+    position: absolute;
+    width: $size;
+    height: $size;
+    right: calc(#{$size} / 2 * -1);
+    bottom: calc(#{$size} / 2 * -1);
+
+}
+
+

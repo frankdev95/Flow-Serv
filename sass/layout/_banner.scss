@@ -1,0 +1,22 @@
+.banner {
+    display: flex;
+    position: relative;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: min-content;
+    }
+
+    &__hero {
+        flex-grow: 1;
+        flex-shrink: 2;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

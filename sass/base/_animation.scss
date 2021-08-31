@@ -1,0 +1,42 @@
+@keyframes showOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+    
+}
+
+@keyframes hideOpacity {
+    0% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes scaleInModal {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes moveYRightModal {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        left: 50%;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        left: 150%;
+    }
+}

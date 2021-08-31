@@ -1,0 +1,21 @@
+.contact {
+    &__container {
+        background: linear-gradient(to bottom, $clr-secondary 65%, #fff 65%, #fff 100%);
+        padding: 4rem 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__form {
+        display: none;
+        flex-direction: column;
+        width: 60%;
+
+        button {
+            align-self: flex-start;
+        }
+    }
+}

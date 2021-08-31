@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media only screen and (max-width: 75em) {
+        font-size: 56.25%;
+    }
+
+    @media only screen and (max-width: 47.9375em) {
+        font-size: 53.125%;
+    }
+}
+
+/*
+Breakpoints
+540px - 33.75em
+600px - 37.5em
+767px - 47.93em
+991px - 61.93em
+1200px - 75em
+1440px - 90em
+1600px - 100em
+*/
+
+@media only screen and (min-width: 100em) {
+    html {
+        font-size: 68.75%;
+    }
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 4rem 0;
+}

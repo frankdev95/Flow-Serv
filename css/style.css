@@ -1,0 +1,338 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  font-style: normal; }
+
+body, .banner__content-container, .form__field input::placeholder,
+.form__field textarea::placeholder, div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_1-container input::placeholder,
+div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_1-container textarea::placeholder,
+div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_2-container input::placeholder,
+div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_2-container textarea::placeholder,
+div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_3-container input::placeholder,
+div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_3-container textarea::placeholder {
+  font-weight: 300;
+  font-style: normal; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+
+/*
+Breakpoints
+540px - 33.75em
+767px - 47.93em
+991px - 61.93em
+1200px - 75em
+1600px - 100em
+*/
+@media only screen and (min-width: 100em) {
+  html {
+    font-size: 75%; } }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+section {
+  padding: 4rem 0; }
+
+body {
+  color: #123295;
+  font-family: filson-soft, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: filson-soft, sans-serif; }
+
+h1 {
+  font-size: 3.2rem; }
+
+h2 {
+  font-size: 2.4rem; }
+
+h3 {
+  font-size: 2.08rem; }
+
+h4 {
+  font-size: 1.6rem; }
+
+h5 {
+  font-size: 1.28rem; }
+
+h6 {
+  font-size: 1.12rem; }
+
+p {
+  font-size: 1.6rem; }
+
+.banner__title {
+  font-size: 8rem;
+  line-height: 8rem; }
+
+.banner__content-container {
+  font-family: filson-pro, sans-serif; }
+
+.section__heading {
+  font-size: 5rem; }
+
+.card__description {
+  font-size: 1.4rem; }
+
+.margin-vertical-xs {
+  margin: 1rem 0; }
+
+.margin-vertical-sm {
+  margin: 2rem 0; }
+
+.margin-vertical-md {
+  margin: 4rem 0; }
+
+.margin-vertical-lg {
+  margin: 6rem 0; }
+
+.margin-vertical-xl {
+  margin: 8rem 0; }
+
+.card {
+  background-color: #fff;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .card::after {
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    position: absolute;
+    box-shadow: 1rem 1rem 0 0 #1d3cec;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; }
+  .card__img {
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover; }
+  .card__description {
+    margin-bottom: 2rem; }
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    flex-grow: 1; }
+    .card__content .btn {
+      align-self: flex-start;
+      margin-top: auto;
+      z-index: 1; }
+  .card__corner {
+    background-color: #f2af19;
+    border-radius: 50%;
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    right: calc(var(--corner-size) / 2 * -1);
+    bottom: calc(var(--corner-size) / 2 * -1); }
+    .card__corner-container {
+      --corner-size: 10rem;
+      background-color: #fff;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: calc(var(--corner-size) / 2);
+      overflow: hidden; }
+
+.btn {
+  all: unset;
+  cursor: pointer; }
+  .btn--solid {
+    background-color: #f2af19;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: .5rem 1.5rem;
+    text-align: center;
+    text-transform: uppercase; }
+  .btn--outline {
+    border: 2px solid #123295;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: normal;
+    margin: 2rem 0;
+    padding: .5rem 1rem; }
+
+div.contact__form form#wpforms-form-36 div.wpforms-submit-container button.wpforms-submit {
+  all: unset;
+  cursor: pointer;
+  background-color: #f2af19;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: .5rem 1.5rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.banner {
+  height: 100vh;
+  padding: 6rem 0 4rem; }
+  .banner__logo {
+    width: 15rem; }
+  .banner__content-container {
+    padding: 3rem 0 0 2rem;
+    border-left: 2px solid #123295; }
+    .banner__content-container button {
+      margin: 3rem 0 0; }
+  .banner__hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+
+.form__field {
+  position: relative;
+  margin-bottom: 1.5rem; }
+  .form__field input,
+  .form__field textarea {
+    background-color: #f2f2f2;
+    border: none;
+    width: 100%; }
+  .form__field input::placeholder,
+  .form__field textarea::placeholder {
+    color: #123295;
+    font-size: 1.2rem;
+    font-family: filson-soft, sans-serif; }
+  .form__field textarea {
+    border-radius: 20px;
+    padding: 2rem; }
+  .form__field input {
+    border-radius: 50px;
+    height: 4rem;
+    padding-left: 2rem; }
+  .form__field textarea:active,
+  .form__field textarea:focus,
+  .form__field input:active,
+  .form__field input:focus {
+    outline: none; }
+
+form button.btn--solid {
+  font-size: 1.4rem; }
+
+div.contact__form {
+  width: 60%; }
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_1-container input,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_1-container textarea,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_2-container input,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_2-container textarea,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_3-container input,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_3-container textarea {
+    background-color: #f2f2f2;
+    border: none;
+    width: 100%; }
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_1-container input::placeholder,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_1-container textarea::placeholder,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_2-container input::placeholder,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_2-container textarea::placeholder,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_3-container input::placeholder,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_3-container textarea::placeholder {
+    color: #123295;
+    font-size: 1.2rem;
+    font-family: filson-soft, sans-serif; }
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_1-container textarea,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_2-container textarea,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_3-container textarea {
+    border-radius: 20px;
+    padding: 2rem;
+    height: 15rem; }
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_1-container input,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_2-container input,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_3-container input {
+    border-radius: 50px;
+    height: 4rem;
+    padding-left: 2rem; }
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_1-container textarea:active,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_1-container textarea:focus,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_1-container input:active,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_1-container input:focus,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_2-container textarea:active,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_2-container textarea:focus,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_2-container input:active,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_2-container input:focus,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_3-container textarea:active,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_3-container textarea:focus,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_3-container input:active,
+  div.contact__form form#wpforms-form-36 div.wpforms-field-container div#wpforms-36-field_3-container input:focus {
+    outline: none; }
+
+.banner {
+  display: flex;
+  position: relative; }
+  .banner__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: min-content; }
+  .banner__hero {
+    flex-grow: 1; }
+  .banner__logo {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.services {
+  position: relative; }
+  .services__background {
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42%;
+    z-index: -1; }
+  .services__title, .services__subtitle {
+    width: max-content;
+    margin: 0 auto; }
+  .services__subtitle {
+    margin-bottom: 6rem;
+    position: relative; }
+  .services__subtitle::after, .services__subtitle::before {
+    border-radius: 10px;
+    background-color: #f2af19;
+    content: "";
+    display: block;
+    width: 7rem;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+  .services__subtitle::after {
+    left: 105%; }
+  .services__subtitle::before {
+    right: 105%; }
+  .services__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 12rem;
+    grid-row-gap: 7rem; }
+
+.contact__container {
+  background: linear-gradient(to bottom, #f2af19 65%, #fff 65%, #fff 100%);
+  padding: 4rem 0; }
+
+.contact .container {
+  display: flex;
+  justify-content: center; }
+
+.contact__form {
+  display: none;
+  flex-direction: column;
+  width: 60%; }
+  .contact__form button {
+    align-self: flex-start; }

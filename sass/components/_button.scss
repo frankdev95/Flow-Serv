@@ -1,0 +1,24 @@
+.btn {
+    all: unset;
+    cursor: pointer;
+
+    &--solid {
+        @include btn-solid;
+    }
+
+    &--outline {
+        @include btn-outline;
+    }
+}
+
+div.contact__form  {
+
+    form#wpforms-form-36 div.wpforms-submit-container {
+        button.wpforms-submit {
+            all: unset;
+            cursor: pointer;
+            @include btn-solid;
+        }
+        
+    }
+}
